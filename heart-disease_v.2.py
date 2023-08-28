@@ -2,6 +2,7 @@
 from typing import Any 
 import streamlit as st
 import pandas as pd 
+import sklearn
 import pickle
 import time
 from PIL import Image
