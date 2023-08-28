@@ -6,7 +6,7 @@ import pickle
 import time
 from PIL import Image
 
-pip install scikit-learn
+!pip install --upgrade scikit-learn
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn import tree
