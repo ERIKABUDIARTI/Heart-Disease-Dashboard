@@ -2,7 +2,7 @@ numpy
 pandas
 matplotlib
 seaborn
-pickle
+pickle==23.2.1
 scikit-learn
 streamlit
 
