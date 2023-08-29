@@ -110,10 +110,9 @@ if loaded_model is not None:
         output = str(result)
 
 
-        results = ()
         st.write("Prediction Results:")
-        for idx, result in enumerate(results):
-              st.write(f"Sample {idx + 1}: {result}")
+        for idx, result in enumerate(output):
+              st.write(f"Sample {idx + 1}: {output}")
 
         st.subheader('Prediction: ')
             
