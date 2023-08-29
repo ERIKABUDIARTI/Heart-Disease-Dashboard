@@ -103,16 +103,9 @@ if st.sidebar.button('Click Here To Predict'):
 
 if loaded_model is not None:        
         prediction = loaded_model.predict(df)
-        results = []
-        for pred in prediction:
-          if pred == 0:
-              results.append('No Heart Disease')
-          else:
-              results.append('Yes Heart Disease')
-        st.write("Prediction Results:")
-        for idx, result in enumerate(results):
-            st.write(f"{idx + 1}: {result}")
-
+        result = ['No Heart Disease' if prediction.any() == 0 else 'Yes Heart Disease']
+        output = str(result[0])
+  
         #result = ['No Heart Disease' if prediction == 0 else 'Yes Heart Disease']
         #output = str(result[0])
 
