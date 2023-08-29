@@ -110,12 +110,7 @@ if loaded_model is not None:
         output = str(result)
 
         st.subheader('Prediction Result: ')
-        #st.write("Prediction Results:")
-        for idx, result in enumerate(output):
-              st.write(f"Sample {idx + 1}: {output}")
-
-        #st.subheader('Prediction: ')
-            
+        
         with st.spinner('Wait for it...'):
                 time.sleep(4)
         st.success(f"Prediction of this app is {output}")
