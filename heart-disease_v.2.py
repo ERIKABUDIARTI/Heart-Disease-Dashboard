@@ -122,7 +122,7 @@ if loaded_model is not None:
                 time.sleep(4)
         st.success(f"Prediction of this app is {output}")
         
-        if prediction == 0:
+        if (prediction == 0).any():
                 st.image(strongheart)
         else:
                 st.image(heartdisease)
