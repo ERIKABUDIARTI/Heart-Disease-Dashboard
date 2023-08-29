@@ -107,12 +107,14 @@ if loaded_model is not None:
             result = 'No Heart Disease'
         else:
             result = 'Yes Heart Disease'
+        
         output = str(result)
 
         st.subheader('Prediction Result: ')
         
         with st.spinner('Wait for it...'):
                 time.sleep(4)
+          
         st.success(f"Prediction of this app is {output}")
         
         if (prediction == 0).any():
