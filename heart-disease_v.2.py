@@ -109,9 +109,9 @@ if loaded_model is not None:
             result = 'Yes Heart Disease'
         output = str(result)
 
-  st.write("Prediction Results:")
-    for idx, result in enumerate(results):
-        st.write(f"Sample {idx + 1}: {result}")
+        st.write("Prediction Results:")
+          for idx, result in enumerate(results):
+              st.write(f"Sample {idx + 1}: {result}")
 
         st.subheader('Prediction: ')
             
