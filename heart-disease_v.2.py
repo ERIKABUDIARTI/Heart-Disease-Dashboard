@@ -109,16 +109,16 @@ if loaded_model is not None:
             result = 'Yes Heart Disease'
         output = str(result)
 
-
-        st.write("Prediction Results:")
+        st.subheader('Prediction: ')
+        #st.write("Prediction Results:")
         for idx, result in enumerate(output):
-              st.write(f"Sample {idx + 1}: {output}")
+              st.write(f"{idx + 1}: {output}")
 
         #st.subheader('Prediction: ')
             
         with st.spinner('Wait for it...'):
                 time.sleep(4)
-        #st.success(f"Prediction of this app is {output}")
+        st.success(f"Prediction of this app is {output}")
         
         if (prediction == 0).any():
                 st.image(strongheart)
