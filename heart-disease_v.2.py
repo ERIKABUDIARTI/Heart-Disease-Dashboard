@@ -106,9 +106,9 @@ if loaded_model is not None:
         results = []
         for pred in prediction:
           if pred == 0:
-            results.append('No Heart Disease')
+              results.append('No Heart Disease')
           else:
-            results.append('Yes Heart Disease')
+              results.append('Yes Heart Disease')
         st.write("Prediction Results:")
         for idx, result in enumerate(results):
             st.write(f"{idx + 1}: {result}")
