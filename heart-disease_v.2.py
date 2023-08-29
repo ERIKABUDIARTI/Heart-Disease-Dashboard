@@ -114,11 +114,11 @@ if loaded_model is not None:
         for idx, result in enumerate(output):
               st.write(f"Sample {idx + 1}: {output}")
 
-        st.subheader('Prediction: ')
+        #st.subheader('Prediction: ')
             
         with st.spinner('Wait for it...'):
                 time.sleep(4)
-        st.success(f"Prediction of this app is {output}")
+        #st.success(f"Prediction of this app is {output}")
         
         if (prediction == 0).any():
                 st.image(strongheart)
