@@ -111,7 +111,7 @@ if loaded_model is not None:
             results.append('Yes Heart Disease')
         st.write("Prediction Results:")
         for idx, result in enumerate(results):
-            st.write(f"Sample {idx + 1}: {result}")
+            st.write(f"{idx + 1}: {result}")
 
         #result = ['No Heart Disease' if prediction == 0 else 'Yes Heart Disease']
         #output = str(result[0])
